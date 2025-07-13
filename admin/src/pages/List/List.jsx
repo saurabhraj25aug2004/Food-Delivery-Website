@@ -16,6 +16,7 @@ const List = ({url}) => {
         toast.error("Failed to fetch food list");
       }
     } catch (error) {
+      console.log(error)
       toast.error("Server error while fetching food list");
     }
   };
